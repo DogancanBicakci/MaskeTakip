@@ -14,5 +14,10 @@ namespace Business.Concrete
         {
 
         }
+
+        public List<Person> GetList()
+        {
+            return null;
+        }
     }
 }
