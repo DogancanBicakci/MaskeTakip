@@ -1,4 +1,7 @@
 ﻿global using global::System;
+using Business.Concrete;
+using Entities.Concrete;
+
 
 namespace Workaround
 {
@@ -7,11 +10,20 @@ namespace Workaround
         private static void Main(string[] args)
         {
 
-            SelamVer(isim:"ali");
-            SelamVer(isim:"doğancan");
-            SelamVer();
+            Person person1 = new Person();
+            person1.FirstName = "ENGİN";
+            person1.LastName = "DEMİROĞ";
+            person1.DateOfBirthYear = 1985;
+            person1.NationalIdentity = 123;
 
-            int sonuc = Topla();
+            Person person2 = new Person();
+            person2.FirstName = "Murat";
+
+            PttManager pttManager = new PttManager(new PersonManager());
+            pttManager.GiveMask(person1);
+
+
+
 
             Console.ReadLine();
         }
@@ -44,3 +56,4 @@ namespace Workaround
 
 
 }
+//Stringler referans türlü değişkendir, fakat değer türlü davranır. Kısaca char array'i diyebiliriz. 
