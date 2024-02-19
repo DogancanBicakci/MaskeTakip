@@ -11,9 +11,9 @@ namespace Workaround
         {
 
             Person person1 = new Person();
-            person1.FirstName = "ENGİN";
-            person1.LastName = "DEMİROĞ";
-            person1.DateOfBirthYear = 1985;
+            person1.FirstName = "Doğancan";
+            person1.LastName = "Bıçakçı";
+            person1.DateOfBirthYear = 1996;
             person1.NationalIdentity = 123;
 
             Person person2 = new Person();
@@ -35,17 +35,7 @@ namespace Workaround
         static void SelamVer(string isim="isimsiz") //Default parametre deniyor
         {
             Console.WriteLine("Merhaba " + isim);
-        }
-
-        static int Topla()
-        {
-            return 5;
-        }
-
-       
-
-
-
+        }      
 
 
     }
